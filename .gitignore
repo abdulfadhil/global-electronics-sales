@@ -1,0 +1,15 @@
+﻿# Windows files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files and Excel lock files
+*.tmp
+*.bak
+*.old
+~$*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example

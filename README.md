@@ -1,5 +1,7 @@
 ﻿# Global Electronics Sales Analysis
 
+![Global Electronics Sales Analysis dashboard](assets/dashboard-preview.png)
+
 A Power BI dashboard created for DASHWIZ at CELISTA '25, a national-level technical symposium held at Meenakshi Sundararajan Engineering College, Chennai, on 15 April 2025. The certificate records a first-place award.
 
 ## What was the project?

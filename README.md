@@ -43,6 +43,14 @@ The report contains five analytical visuals:
 | Power BI | Data visualisation and dashboard development |
 | Excel | Working with the supplied sales dataset |
 
+## Key Insights
+
+- **Product Performance:** Smartwatch generated the highest revenue at 271.83 million, while Headphones recorded the lowest at 244.31 million.
+- **Regional Performance:** Africa recorded the highest revenue at 282.13 million, while Oceania had the lowest at 246.81 million.
+- **Customer Segments:** Corporate customers accounted for the highest number of units sold, with 395,583 units.
+- **Profit Trends:** Annual profit peaked in 2021 at 82.79 million and reached its lowest point in 2019 at 73.65 million.
+- **Revenue Forecast:** Total actual and forecast revenue were nearly equal across 2018–2023, differing by just 3,564.21.
+
 ## Dataset
 
 The dataset was provided by the competition organisers.
@@ -80,16 +88,17 @@ No blank cells or duplicate `OrderID` values were found. Both numerical relation
 
 ```text
 Global Electronics Sales Analysis/
+├── LICENSE
+├── .gitignore
+├── README.md
 ├── assets/
 │   └── dashboard-preview.png
 ├── dashboard/
 │   └── global-electronics-sales.pbix
 ├── data/
 │   └── global-electronics-sales-data.xlsx
-├── docs/
-│   └── data-dictionary.md
-├── .gitignore
-└── README.md
+└── docs/
+    └── data-dictionary.md
 ```
 
 ## Getting Started

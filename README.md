@@ -119,3 +119,7 @@ Global Electronics Sales Analysis/
 ## Documentation
 
 - [Data Dictionary](docs/data-dictionary.md) – descriptions of the dataset columns and their meanings.
+
+## Project Outcome
+
+This project demonstrates how Power BI can be used to explore sales data, identify business trends and present insights through an interactive dashboard.

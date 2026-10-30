@@ -1,59 +1,112 @@
 ﻿# Global Electronics Sales Analysis
 
-![Global Electronics Sales Analysis dashboard](assets/dashboard-preview.png)
+A sales analytics project developed in April 2025 for the DASHWIZ Power BI Competition, where it secured First Place. The competition was held as part of CELISTA '25, a National-Level Technical Symposium at Meenakshi Sundararajan Engineering College, Chennai.
 
-A Power BI dashboard created for DASHWIZ at CELISTA '25, a national-level technical symposium held at Meenakshi Sundararajan Engineering College, Chennai, on 15 April 2025. The certificate records a first-place award.
+## Project Overview
 
-## What was the project?
+The project focuses on analysing global electronics sales data and presenting sales information through a Power BI dashboard.
 
-The competition involved a Power BI task and an Excel dataset. The aim of this project was to turn the supplied sales data into a dashboard that makes key information easier to explore.
+The competition organisers provided an Excel dataset containing order details, products, regions, customer segments, revenue, costs, profit and forecast revenue. The task was to analyse this information and present the key findings through clear visualisations.
 
-## What does the dashboard show?
+## Problem Statement
 
-- Revenue by product
-- Revenue by region
-- Units sold by customer segment
-- Actual revenue compared with forecast revenue
-- Profit trends from 2018 to 2023
+The dataset contained sales information across different products, regions and customer segments. Understanding overall sales performance required looking at several aspects of the data, including revenue, profit, units sold and forecast revenue.
 
-## Tools used
+The objective was to analyse the supplied data and develop a dashboard that makes these business metrics easier to understand and compare.
 
-- Microsoft Power BI Desktop — to build the dashboard
-- Microsoft Excel — to work with the supplied dataset
+## Solution
+
+A Power BI dashboard was developed using the competition-provided Excel dataset. It brings together key sales metrics in one report and presents them through five analytical visuals.
+
+The dashboard allows users to explore product performance, regional revenue, customer segments, profit trends and the comparison between actual and forecast revenue.
+
+## Dashboard Preview
+
+![Global Electronics Sales Analysis Dashboard](assets/dashboard-preview.png)
+
+## Dashboard Overview
+
+The report contains five analytical visuals:
+
+| Analysis | Description |
+|---|---|
+| Revenue by Product | Compares total revenue across products. |
+| Profit Trend | Shows profit trends from 2018 to 2023. |
+| Revenue by Region | Presents total revenue across sales regions. |
+| Units Sold by Customer Segment | Compares units sold across customer segments. |
+| Actual vs Forecast Revenue | Compares actual revenue with forecast revenue. |
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Power BI | Data visualisation and dashboard development |
+| Excel | Working with the supplied sales dataset |
 
 ## Dataset
 
-The workbook contains 3,000 data rows, 13 columns and one worksheet. Its order dates span 2018–2023.
+The dataset was provided by the competition organisers.
 
-The data includes orders, dates, regions, countries, products, categories, customer segments, units sold, unit prices, revenue, cost, profit and forecast revenue.
+The Excel workbook contains 3,000 data rows, 13 columns and one worksheet named `Sheet1`. The recorded order dates range from 3 January 2018 to 27 December 2023.
 
-See `docs/data-dictionary.md` for the column descriptions.
+The dataset includes information about:
 
-## Project files
+- Orders and order dates
+- Regions and countries
+- Products and categories
+- Customer segments
+- Units sold and unit prices
+- Total revenue and cost of goods sold
+- Profit and forecast revenue
 
-- `dashboard/global-electronics-sales.pbix` — Power BI report
-- `data/global-electronics-sales-data.xlsx` — Excel dataset
-- `assets/dashboard-preview.png` — dashboard screenshot
-- `docs/data-dictionary.md` — dataset field descriptions
+The dataset covers six products, six regions and four customer segments.
 
-## How to open the report
+For descriptions of all 13 columns, refer to the [Data Dictionary](docs/data-dictionary.md).
 
-1. Install Microsoft Power BI Desktop.
-2. Open `dashboard/global-electronics-sales.pbix`.
-3. If asked, reconnect the dataset to `data/global-electronics-sales-data.xlsx`.
-4. Refresh the data and check that all visuals display correctly.
+## Data Validation
 
-## Data checks
+The dataset was checked for basic data quality and numerical consistency.
 
-Initial checks found no blank cells or duplicate OrderID values in the dataset. The following calculations were also checked:
+The following checks were performed:
 
-- UnitsSold × UnitPrice = TotalRevenue
-- TotalRevenue − COGS = Profit
+- Blank-cell verification.
+- Duplicate `OrderID` verification.
+- `UnitsSold × UnitPrice = TotalRevenue`.
+- `TotalRevenue − COGS = Profit`.
 
-These checks do not prove that every visual is correct or that the forecast is accurate.
+No blank cells or duplicate `OrderID` values were found. Both numerical relationships were consistent across the dataset, within a tolerance of 0.01.
 
-## Notes
+## Project Structure
 
-The report screenshot shows a last-saved timestamp of 15 April 2025. The certificate separately records the competition date.
+```text
+Global Electronics Sales Analysis/
+├── assets/
+│   └── dashboard-preview.png
+├── dashboard/
+│   └── global-electronics-sales.pbix
+├── data/
+│   └── global-electronics-sales-data.xlsx
+├── docs/
+│   └── data-dictionary.md
+├── .gitignore
+└── README.md
+```
 
-The dataset's currency, original source and forecast method have not been confirmed from the available files. Check the competition's sharing rules before publishing the dataset or report publicly.
+## Getting Started
+
+### Requirements
+
+- Power BI Desktop
+- Excel
+
+### Open the Power BI Report
+
+1. Clone or download the repository.
+2. Open `dashboard/global-electronics-sales.pbix` in Power BI Desktop.
+3. If prompted, reconnect the data source to `data/global-electronics-sales-data.xlsx`.
+4. Refresh the data if required.
+5. Explore the dashboard and its visualisations.
+
+## Documentation
+
+- [Data Dictionary](docs/data-dictionary.md) – descriptions of the dataset columns and their meanings.

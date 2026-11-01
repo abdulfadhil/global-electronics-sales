@@ -120,6 +120,12 @@ Global Electronics Sales Analysis/
 
 - [Data Dictionary](docs/data-dictionary.md) – descriptions of the dataset columns and their meanings.
 
-## Project Outcome
+## Limitations
 
-This project demonstrates how Power BI can be used to explore sales data, identify business trends and present insights through an interactive dashboard.
+- The currency unit used in the dataset was not specified by the competition organisers.
+- The methodology used to calculate forecast revenue was not documented.
+- The analysis is based on the dataset provided for the competition.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for the terms.
